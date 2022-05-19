@@ -8,18 +8,17 @@ var tbody = d3.select("tbody");
 function buildTable(data) {
     tbody.html("");
 
-// Adding for loop
-data.forEach((dataRow) => {
-    // Append row to HTML table
-    let row = tbody.append("tr");
-    // Add each value from object into cell
-    Object.values(dataRow).forEach((val) => {
-        let cell = row.append("td");
-        cell.text(val);
-        }
-    );    
-});
-
+    // Adding for loop
+    data.forEach((dataRow) => {
+        // Append row to HTML table
+        let row = tbody.append("tr");
+        // Add each value from object into cell
+        Object.values(dataRow).forEach((val) => {
+            let cell = row.append("td");
+            cell.text(val);
+            });    
+    });
+}
 // Add filters for date data
 function handleClick() {
     // Grab the datetime value form the filter
@@ -42,6 +41,3 @@ d3.selectAll("#filter-btn").on("click", handleClick);
 
 // Build the table when the page loads
 buildTable(tableData);
-
-
-}
