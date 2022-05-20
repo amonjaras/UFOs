@@ -84,9 +84,10 @@ value.toLowerCase()
 
 ![UFO Filtes](https://github.com/amonjaras/UFOs/blob/main/Module%20Files/ufo_filters.png)
 
-[:top: Go To Top](#index)
-
 To give a better presentation a Footer was added to the work.
+
+
+[:top: Go To Top](#index)
 
 
 This work belongs to [^1].
